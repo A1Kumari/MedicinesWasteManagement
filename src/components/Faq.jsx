@@ -4,7 +4,7 @@ function Faq() {
   return (
     <>
       <Container>
-      <h1>FAQ</h1>
+      <h2>FAQ</h2>
       <p>
         At Cure Ease, we are dedicated to making medications more accessible and
         affordable to people in need. We offer a wide range of prescription and
