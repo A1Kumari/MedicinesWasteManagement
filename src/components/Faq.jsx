@@ -1,24 +1,64 @@
-import React from "react"
-
-export default function Faq() {
+import React from "react";
+import { Container, Accordion, Card,} from "react-bootstrap";
+function Faq() {
   return (
     <>
-    faq
-    1. What is the purpose of a medicine wastage reduction website?
-A medicine wastage reduction website aims to reduce the amount of unused and expired medications that are discarded, and promote the responsible use and disposal of medications. The website can provide information on safe disposal methods, medication donation programs, and medication tracking to help reduce wastage.
-
-2. Who can benefit from a medicine wastage reduction website?
-A medicine wastage reduction website can benefit a wide range of people, including patients, healthcare providers, pharmacies, and environmental organizations. Patients can benefit by learning how to properly dispose of their medications and avoiding the wastage of expensive medications. Healthcare providers can benefit by reducing their medication inventory costs and ensuring that their patients are receiving the appropriate medications. Pharmacies can benefit by reducing their medication disposal costs and environmental organizations can benefit by reducing the amount of medications that end up in landfills and waterways.
-
-3. How can a medicine wastage reduction website reduce the amount of wasted medications?
-A medicine wastage reduction website can reduce the amount of wasted medications by providing information on safe disposal methods, medication tracking, and medication donation programs. By educating patients and healthcare providers on the proper disposal of medications, the website can help reduce the amount of unused and expired medications that are discarded. Medication tracking can help ensure that medications are used before they expire, reducing the amount of expired medications that are discarded. Medication donation programs can provide a means for unused but still usable medications to be donated to people in need, rather than being discarded.
-
-4. What are some challenges in creating a medicine wastage reduction website?
-Some challenges in creating a medicine wastage reduction website include ensuring data privacy and security, developing an effective user interface that is easy to use and understand, and promoting user adoption. The website may also need to comply with regulatory requirements and work with existing medication databases to provide accurate information on medication usage and expiry dates.
-
-5. How can a medicine wastage reduction website be made sustainable and scalable?
-A medicine wastage reduction website can be made sustainable and scalable by using cloud hosting, modular design, and integrating with other systems such as electronic health records or pharmacy systems. These features can help ensure that the website can handle increasing traffic and data storage requirements as it grows, while also making it easier to add new features or scale up existing ones as needed. Additionally, the website can leverage social media and other outreach strategies to promote user adoption and increase its impact.
-
+      <Container>
+      <h1>FAQ</h1>
+      <p>
+        At Cure Ease, we are dedicated to making medications more accessible and
+        affordable to people in need. We offer a wide range of prescription and
+        over-the-counter medications, as well as medication counseling services
+        to help ensure that our customers are taking their medications safely
+        and effectively. We believe that everyone should have access to the
+        medications they need to live healthy and fulfilling lives, and we are
+        committed to providing high-quality products and exceptional customer
+        service to help make that a reality.
+      </p>
+        <Accordion defaultActiveKey={0}>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>What types of medication do you sell?</Accordion.Header>
+            <Accordion.Body>
+            We sell a variety of prescription and over-the-counter medications, including those for common conditions such as allergies, pain, and infections.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>
+            Do you require a prescription to purchase medication?
+            </Accordion.Header>
+            <Accordion.Body>
+            Prescription medications require a valid prescription from a licensed healthcare provider. Over-the-counter medications can be purchased without a prescription.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>
+            How long does it take to receive my order?
+            </Accordion.Header>
+            <Accordion.Body>
+            Delivery times can vary depending on the shipping option selected and the destination. Standard shipping typically takes 3-7 business days, while expedited shipping can arrive within 1-2 business days.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header>
+            What is your return policy?
+            </Accordion.Header>
+            <Accordion.Body>
+            We accept returns on most unopened and unused products within 30 days of purchase. Please see our full return policy for more information.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="4">
+            <Accordion.Header>
+            How can I contact customer service if I have a question or concern?
+            </Accordion.Header>
+            <Accordion.Body>
+            Our customer service team can be reached by phone, email, or through our website's contact form. We strive to respond to all inquiries within 24 hours.
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      </Container>
     </>
-  )
+  );
 }
+
+export default Faq;
+
